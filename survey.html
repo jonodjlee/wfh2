@@ -105,15 +105,13 @@
         <input type="text" name="managermgtupskillvid" id="managermgtupskillvid" cf-questions="Do you watch any videos or online courses to help you with upskilling?&amp;&amp;If yes, could you please list examples?" cf-conditional-managermgtupskill="" cf-conditional-role="employer/manager">
         
         <input type="text" name="managermgtupskillcourse" id="managermgtupskillcourse" cf-questions="Have you ever learned anything from an online course?" cf-conditional-managermgtupskillvid="" cf-conditional-role="employer/manager">
-        
-        <input type="text" name="managermgttraining" id="managermgttraining" cf-questions="Have you completed any training in remote management?" cf-conditional-managermgtupskillcourse="" cf-conditional-role="employer/manager">
 
-        <fieldset cf-questions="Are you an employer or employee?">
-            <input required type="radio" name="yesrole" id="yesroleemployer" value="employer" cf-conditional-yesremotepastnocomfortexp="" cf-conditional-remote="1||2||3||4||5||6||7">
-            <label for="yesroleemployer">Employer</label>
+        <fieldset cf-questions="Have you completed any training in remote management?">
+            <input required type="radio" name="managermgttraining" id="managermgttrainingtrue" value="yes" cf-conditional-managermgtupskillcourse="" cf-conditional-role="employer/manager">
+            <label for="managermgttrainingtrue">Yes</label>
 
-            <input required type="radio" name="yesrole" id="yesroleemployee" value="employee" cf-conditional-yesremotepastnocomfortexp="" cf-conditional-remote="1||2||3||4||5||6||7">
-            <label for="yesroleemployee">Employee</label>
+            <input required type="radio" name="managermgttraining" id="managermgttrainingfalse" value="no" cf-conditional-managermgtupskillcourse="" cf-conditional-role="employer/manager">
+            <label for="managermgttrainingfalse">No</label>
         </fieldset>
 
         <input type="text" name="yesmanager" id="yesmanager" cf-questions="Do you oversee or manage other employees?" cf-conditional-yesrole="employee">
