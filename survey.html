@@ -90,7 +90,7 @@
             <label for="taskcommeffectivefalse">No</label>
         </fieldset>
 
-        <input type="text" name="managertimemgt" id="managertimemgt" cf-input-placeholder="Eg. always running overtime..." cf-questions="How are you currently handling time management?" cf-conditional-taskcommeffective="yes||no" cf-conditional-role="employer/manager">
+        <input type="text" name="managertimemgt" id="managertimemgt" cf-input-placeholder="Eg. always running overtime..." cf-questions="How are you currently handling time management (especially if you are remote)?" cf-conditional-taskcommeffective="yes||no" cf-conditional-role="employer/manager">
 
         <input type="text" name="managersocenvchange" id="managersocenvchange" cf-questions="How has the social environment of your work changed since the start of 2020?" cf-conditional-managertimemgt="" cf-conditional-role="employer/manager">
 
@@ -133,6 +133,8 @@
         <input type="text" name="emptaskcomm" id="emptaskcomm" cf-input-placeholder="Eg. email, meetings, Slack, etc." cf-questions="How are tasks/goals assigned to you?" cf-conditional-role="employee">
         
         <input type="text" name="emptaskcommeff" id="emptaskcommeff" cf-questions="Do you find this effective?" cf-conditional-emptaskcomm="" cf-conditional-role="employee">
+        
+        <input type="text" name="emptimemgt" id="emptimemgt" cf-input-placeholder="Eg. always running overtime..." cf-questions="How are you currently handling time management (especially if you are remote)?" cf-conditional-emptaskcommeff="" cf-conditional-role="employee">
 
         <input type="text" name="yeslike" id="yeslike" cf-questions="What do you like about working remotely?" cf-conditional-yesremotepastqualityexp="" cf-conditional-remote="1||2||3||4||5||6||7">
 
