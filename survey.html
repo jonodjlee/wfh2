@@ -114,7 +114,9 @@
             <label for="managermgttrainingfalse">No</label>
         </fieldset>
 
-        <input type="text" name="yesmanager" id="yesmanager" cf-questions="Do you oversee or manage other employees?" cf-conditional-yesrole="employee">
+        <input type="text" name="managermgttrainingvalue" id="managermgttrainingvalue" cf-questions="What value have you found in that?" cf-conditional-managermgttraining="yes" cf-conditional-role="employer/manager">
+        
+        <input type="text" name="managermgttrainingpotval" id="managermgttrainingpotval" cf-questions="Do you belive you could benefit from remote management training?" cf-conditional-managermgttraining="no" cf-conditional-role="employer/manager">
 
         <fieldset cf-questions="Next one... Has working from home affected the quality of your work or your productivity?">
             <input required type="radio" name="yesremotepastquality" id="currentremotepastqualitytrue" value="yes" cf-conditional-yesmanager="" cf-conditional-remote="1||2||3||4||5||6||7">
