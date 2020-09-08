@@ -82,12 +82,12 @@
 
         <input type="text" name="taskcomm" id="taskcomm" cf-input-placeholder="Eg. email, meetings, Slack, etc." cf-questions="How do you communicate tasks to your direct reports?" cf-conditional-role="employer/manager">
 
-        <fieldset cf-questions="Alright! Are you comfortable working from home?">
-            <input required type="radio" name="yesremotepastcomfortable" id="currentremotepasttruecomforttrue" value="yes" cf-conditional-wfhdiff="" cf-conditional-remote="1||2||3||4||5||6||7">
-            <label for="currentremotepasttruecomforttrue">Yes</label>
+        <fieldset cf-questions="Do you find your current methods effective?">
+            <input required type="radio" name="taskcommeffective" id="taskcommeffectivetrue" value="yes" cf-conditional-taskcomm="" cf-conditional-role="employer/manager">
+            <label for="taskcommeffectivetrue">Yes</label>
 
-            <input required type="radio" name="yesremotepastcomfortable" id="currentremotepastfalsecomfortfalse" value="no" cf-conditional-wfhdiff="" cf-conditional-remote="1||2||3||4||5||6||7">
-            <label for="currentremotepastfalsecomfortfalse">No</label>
+            <input required type="radio" name="taskcommeffective" id="taskcommeffectivefalse" value="no" cf-conditional-taskcomm="" cf-conditional-role="employer/manager">
+            <label for="taskcommeffectivefalse">No</label>
         </fieldset>
 
         <input type="text" name="yesremotepastnocomfortexp" id="yesremotepastnocomfortexp" cf-input-placeholder="Eg. feeling too isolated..." cf-questions="Could you please explain why?" cf-conditional-yesremotepastcomfortable="no">
