@@ -21,10 +21,6 @@
 
 <body>
     <form id="form" class="textgtreg">
-        <!--<cf-robot-message class="textgtreg" cf-questions="Hello there &#x1F44B;&amp;&amp;Welcome to the survey&amp;&amp;Let's begin..."></cf-robot-message>-->
-        <!--<input required type="text" name="firstname" id="firstname" cf-input-placeholder="Type your first name here..." cf-error="Please enter your first name." cf-questions="What's your first name?" />
-        <input required type="text" name="lastname" id="lastname" cf-input-placeholder="Type your last name here..." cf-error="Please enter your last name." cf-questions="Hi {firstname}, what's your last name?" />
-        <input required type="email" name="email" id="email" cf-input-placeholder="Enter your email here..." cf-error="Please enter a valid email." cf-questions="{firstname} {lastname}, great to meet you!&amp;&amp;What's your email?" />-->
 
         <fieldset cf-questions="Hello there &#x1F44B;&amp;&amp;Welcome to the survey&amp;&amp;Let's get started...&amp;&amp;What's your age range?">
             <input required type="radio" name="age" id="age1" value="≤21">
@@ -84,7 +80,7 @@
             <label for="roleemployee">Employee</label>
         </fieldset>
 
-        <input type="text" name="wfhdiff" id="wfhdiff" cf-questions="How is working remotely different to working with colleagues?" cf-conditional-findingwfh="" cf-conditional-remote="1||2||3||4||5||6||7">
+        <input type="text" name="taskcomm" id="taskcomm" cf-input-placeholder="Eg. email, meetings, Slack, etc." cf-questions="How do you communicate tasks to your direct reports?" cf-conditional-role="employer/manager">
 
         <fieldset cf-questions="Alright! Are you comfortable working from home?">
             <input required type="radio" name="yesremotepastcomfortable" id="currentremotepasttruecomforttrue" value="yes" cf-conditional-wfhdiff="" cf-conditional-remote="1||2||3||4||5||6||7">
