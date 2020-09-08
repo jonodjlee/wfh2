@@ -69,14 +69,20 @@
         </fieldset>
 
         <fieldset cf-questions="Ok! Have you worked remotely in the past?">
-            <input required type="radio" name="yesremotepast" id="currentremotepasttrue" value="yes" cf-conditional-remote="0||1||2||3||4||5||6||7">
+            <input required type="radio" name="remotepast" id="remotepasttrue" value="yes" cf-conditional-remote="0||1||2||3||4||5||6||7">
             <label for="currentremotepasttrue">Yes</label>
 
-            <input required type="radio" name="yesremotepast" id="currentremotepastfalse" value="no" cf-conditional-remote="0||1||2||3||4||5||6||7">
+            <input required type="radio" name="remotepast" id="remotepastfalse" value="no" cf-conditional-remote="0||1||2||3||4||5||6||7">
             <label for="currentremotepastfalse">No</label>
         </fieldset>
+        
+        <fieldset cf-questions="Are you a employer/manager or employee?">
+            <input required type="radio" name="role" id="rolemanager" value="employer/manager" cf-conditional-yesremotepast="yes||no">
+            <label for="currentremotepasttrue">Employer</label>
 
-        <input type="text" name="findingwfh" id="findingwfh" cf-input-placeholder="Eg. boring, liberating, tiring..." cf-questions="How are you finding working remotely?" cf-conditional-yesremotepast="no">
+            <input required type="radio" name="role" id="roleemployee" value="employee" cf-conditional-yesremotepast="yes||no">
+            <label for="currentremotepastfalse">Employee</label>
+        </fieldset>
 
         <input type="text" name="wfhdiff" id="wfhdiff" cf-questions="How is working remotely different to working with colleagues?" cf-conditional-findingwfh="" cf-conditional-remote="1||2||3||4||5||6||7">
 
