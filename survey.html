@@ -143,6 +143,14 @@
         <input type="text" name="empsocchangeimp" id="empsocchangeimp" cf-questions="Do you have any suggestions as to how to increase social engagement?" cf-conditional-empsocchange="" cf-conditional-role="employee">
         
         <input type="text" name="empupskill" id="empupskill" cf-questions="Do you believe gaining more skills in remote working would improve your productivity?" cf-conditional-empsocchangeimp="" cf-conditional-role="employee">
+        
+        <fieldset cf-questions="Do you watch any videos or any online content to help you upskill?&amp;&amp;If so, how did it help?">
+            <input required type="radio" name="empvid" id="empvidtrue" value="yes" cf-conditional-empupskill="" cf-conditional-role="employee">
+            <label for="empvidtrue">Yes</label>
+
+            <input required type="radio" name="empvid" id="empvidfalse" value="no" cf-conditional-empupskill="" cf-conditional-role="employee">
+            <label for="empvidfalse">No</label>
+        </fieldset>
 
         <input type="text" name="yeslike" id="yeslike" cf-questions="What do you like about working remotely?" cf-conditional-yesremotepastqualityexp="" cf-conditional-remote="1||2||3||4||5||6||7">
 
