@@ -153,6 +153,14 @@
         </fieldset>
         
         <input type="text" name="empupskillresult" id="empupskillresult" cf-questions="Did it help?" cf-conditional-empvid="yes" cf-conditional-role="employee">
+        
+        <fieldset cf-questions="Do you believe an online educational course would help you to work effectively (whilst remote)?">
+            <input required type="radio" name="empcourse" id="empcoursetrue" value="yes" cf-conditional-empupskillresult="" cf-conditional-role="employee">
+            <label for="empcoursetrue">Yes</label>
+
+            <input required type="radio" name="empcourse" id="empcoursefalse" value="no" cf-conditional-empupskillresult="" cf-conditional-role="employee">
+            <label for="empviempcoursefalsedfalse">No</label>
+        </fieldset>
 
         <input type="text" name="yeslike" id="yeslike" cf-questions="What do you like about working remotely?" cf-conditional-yesremotepastqualityexp="" cf-conditional-remote="1||2||3||4||5||6||7">
 
