@@ -116,7 +116,13 @@
 
         <input type="text" name="managermgttrainingvalue" id="managermgttrainingvalue" cf-questions="What value have you found in that?" cf-conditional-managermgttraining="yes" cf-conditional-role="employer/manager">
         
-        <input type="text" name="managermgttrainingpotval" id="managermgttrainingpotval" cf-questions="Do you believe you could benefit from remote management training?" cf-conditional-managermgttraining="no" cf-conditional-role="employer/manager">
+        <fieldset cf-questions="Have you completed any training in remote management?">
+            <input required type="radio" name="managermgttrainingpotval" id="managermgttrainingpotvaltrue" value="yes" cf-conditional-managermgttraining="no" cf-conditional-role="employer/manager">
+            <label for="managermgttrainingpotvaltrue">Yes</label>
+
+            <input required type="radio" name="managermgttrainingpotval" id="managermgttrainingpotvalfalse" value="no" cf-conditional-managermgttraining="no" cf-conditional-role="employer/manager">
+            <label for="managermgttrainingpotvalfalse">No</label>
+        </fieldset>
 
         <fieldset cf-questions="Would you see value in gaining further skills in remote management?">
             <input required type="radio" name="managerfurtherskills" id="managerfurtherskillstrue" value="yes" cf-conditional-managermgttrainingvalue="" cf-conditional-role="employer/manager">
