@@ -132,15 +132,35 @@
             <label for="managerfurtherskillsfalse">No</label>
         </fieldset>
         
-        <fieldset cf-questions="Would you be interested in starting an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
-            <input required type="radio" name="courseinterest1" id="courseinterest1true" value="yes" cf-conditional-managerfurtherskills="yes" cf-conditional-role="employer/manager">
+        <fieldset cf-questions="1 Would you be interested in starting an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
+            <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-managerfurtherskills="yes" cf-conditional-role="employer/manager">
             <label for="courseinterest1true">Yes</label>
 
             <input required type="radio" name="courseinterest1" id="courseinterest1false" value="no" cf-conditional-managerfurtherskills="yes" cf-conditional-role="employer/manager">
             <label for="courseinterest1false">No</label>
         </fieldset>
-
+        
         <input type="text" name="managerfurtherskillsnoexp" id="managerfurtherskillsnoexp" cf-questions="Could you please explain why?" cf-conditional-managerfurtherskills="no" cf-conditional-role="employer/manager">
+        
+        <fieldset cf-questions="1 Which one of these do you find to be most challenging while remote working?">
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1social" value="social" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
+            <label for="courseinterestarea1social">Social Interaction</label>
+
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1timemgt" value="timemgt" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
+            <label for="courseinterestarea1timemgt">Time Management</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1workenv" value="workenv" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
+            <label for="courseinterestarea1workenv">Physical Work Environment</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1homedist" value="homedist" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
+            <label for="courseinterestarea1homedist">Home Distractions</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1motiv" value="motiv" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
+            <label for="courseinterestarea1motiv">Motivation</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1other" value="other" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
+            <label for="courseinterestarea1other">Other</label>
+        </fieldset>
         
         <input type="text" name="emptaskcomm" id="emptaskcomm" cf-input-placeholder="Eg. email, meetings, Slack, etc." cf-questions="How are tasks/goals assigned to you?" cf-conditional-role="employee">
         
