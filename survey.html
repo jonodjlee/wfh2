@@ -206,12 +206,6 @@
             <label for="submit">Yes</label>
         </fieldset>
 
-        <!--<input type="hidden" name="_subject" value="New WFH Survey submission">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_webhook" value="https://hook.integromat.com/ckv595xf9a1uvh9kjykg4gyjp9s21opd">
-        <input type="hidden" name="_url" value="https://remoteworksurvey.netlify.app/survey.html">
-        <input type="hidden" name="_next" value="https://remoteworksurvey.netlify.app/success.html">-->
-
     </form>
     <div id="cf-context" role="cf-context" cf-context></div>
 
@@ -248,51 +242,18 @@
                     success();
                 },
                 submitCallback: function() {
-                    /*const scriptURL = 'https://api.formcake.com/api/form/6115f711-a3df-450b-ab9c-052a53ff4ff2/submission' //'https://formsubmit.co/bc7465f0b14036c3a724aed6c8863560'
-                    conversationalForm.addRobotChatResponse("That's it! Thanks for your time &#x1F60A;");
-                    fetch(scriptURL, {
-                            method: 'POST',
-                            body: new FormData(form)
-                        })
-                        .then(response => setTimeout(function() {
-                            window.location();
-                        }, 5000))
-                        .catch(error => console.error('Error!', error.message)).then(function() {
-                            window.location.assign('https://remoteworksurvey.netlify.app/success.html')
-                        });*/
 
                     var formData = conversationalForm.getFormData();
                     var formDataSerialized = conversationalForm.getFormData(true);
                     console.log("Formdata:", formData);
                     console.log("Formdata, serialized:", formDataSerialized);
 
-                    /* const SUBMISSION_ENDPOINT = 'https://api.formcake.com/api/form/6115f711-a3df-450b-ab9c-052a53ff4ff2/submission';
-                     const formcakePost = (data = {formData}) => fetch(SUBMISSION_ENDPOINT, {
-                         method: 'POST',
-                         headers: {
-                             'Content-Type': 'application/json'
-                         },
-                         body: JSON.stringify(data),
-                     });
-
-                     formcakePost({
-                             example: 'data'
-                         })
-                         .then((response) => response.json())
-                         .then((data) => console.log(data));*/
-
-                    /*var jqxhr = $.post('https://api.formcake.com/api/form/6115f711-a3df-450b-ab9c-052a53ff4ff2/submission', formDataSerialized, function(data) {
-                        console.log("Success! Data: " + data.statusText);
-                    }).then(function() {
-                        location.href = 'https://remoteworksurvey.netlify.app/success.html'
-                    });*/
-
-                    /*$(function() {
-                        var jqxhr = $.post("https://api.formcake.com/api/form/6115f711-a3df-450b-ab9c-052a53ff4ff2/submission", $("#form").serialize(), function(data) {
+                    $(function() {
+                        var jqxhr = $.post("https://api.formcake.com/api/form/c8a1d861-0bd1-445f-9d13-8d6eb07d7164/submission", $("#form").serialize(), function(data) {
                             console.log("Success! Data: " + data.statusText);
                             $(location).attr('href', 'https://remoteworksurvey.netlify.app/success.html');
                         });
-                    })*/
+                    })
 
                 }
             });
