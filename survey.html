@@ -115,24 +115,16 @@
         </fieldset>
 
         <input type="text" name="managermgttrainingvalue" id="managermgttrainingvalue" cf-questions="What value have you found in that?" cf-conditional-managermgttraining="yes" cf-conditional-role="employer/manager">
-        
-        <fieldset cf-questions="Do you believe you could benefit from remote management training?">
-            <input required type="radio" name="managermgttrainingpotval" id="managermgttrainingpotvaltrue" value="yes" cf-conditional-managermgttraining="no" cf-conditional-role="employer/manager">
-            <label for="managermgttrainingpotvaltrue">Yes</label>
-
-            <input required type="radio" name="managermgttrainingpotval" id="managermgttrainingpotvalfalse" value="no" cf-conditional-managermgttraining="no" cf-conditional-role="employer/manager">
-            <label for="managermgttrainingpotvalfalse">No</label>
-        </fieldset>
 
         <fieldset cf-questions="Would you see value in gaining further skills in remote management?">
-            <input required type="radio" name="managerfurtherskills" id="managerfurtherskillstrue" value="yes" cf-conditional-managermgttrainingvalue="" cf-conditional-role="employer/manager">
+            <input required type="radio" name="managerfurtherskills" id="managerfurtherskillstrue" value="yes" cf-conditional-managermgttraining="no" cf-conditional-managermgttrainingvalue="" cf-conditional-role="employer/manager">
             <label for="managerfurtherskillstrue">Yes</label>
 
-            <input required type="radio" name="managerfurtherskills" id="managerfurtherskillsfalse" value="no" cf-conditional-managermgttrainingvalue="" cf-conditional-role="employer/manager">
+            <input required type="radio" name="managerfurtherskills" id="managerfurtherskillsfalse" value="no" cf-conditional-managermgttraining="no" cf-conditional-managermgttrainingvalue="" cf-conditional-role="employer/manager">
             <label for="managerfurtherskillsfalse">No</label>
         </fieldset>
         
-        <fieldset cf-questions="1 Would you be interested in starting an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
+        <fieldset cf-questions="1 Would you be interested in an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
             <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-managerfurtherskills="yes" cf-conditional-role="employer/manager">
             <label for="courseinterest1true">Yes</label>
 
@@ -274,7 +266,7 @@
         <input required type="email" name="email" id="email" cf-input-placeholder="Enter your email here..." cf-error="Please enter a valid email." cf-questions="Great!&amp;&amp;What's your email?" cf-conditional-followup="yes" />-->
 
         <fieldset cf-questions="All done... Are you ready to submit?">
-            <input required type="radio" name="submit" id="submit" value="yes">
+            <input required type="radio" name="submit" id="submit" value="yes" cf-conditional-courseinterest1="no" cf-conditional-role="employer/manager||employee">
             <label for="submit">Yes</label>
         </fieldset>
 
