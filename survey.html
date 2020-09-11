@@ -115,16 +115,10 @@
         </fieldset>
 
         <input type="text" name="managermgttrainingvalue" id="managermgttrainingvalue" cf-questions="What value have you found in that?" cf-conditional-managermgttraining="yes">
-
-        <fieldset cf-questions="Would you see value in gaining further skills in remote management?">
-            <input required type="radio" name="managerfurtherskills" id="managerfurtherskillstrue" value="yes" cf-conditional-managermgttrainingvalue="" cf-conditional-role="employer/manager">
-            <label for="managerfurtherskillstrue">Yes</label>
-
-            <input required type="radio" name="managerfurtherskills" id="managerfurtherskillsfalse" value="no" cf-conditional-managermgttrainingvalue="" cf-conditional-role="employer/manager">
-            <label for="managerfurtherskillsfalse">No</label>
-        </fieldset>
         
-        <input type="text" name="managerfurtherskillsnoexp" id="managerfurtherskillsnoexp" cf-questions="Could you please explain why?" cf-conditional-managerfurtherskills="no">
+        <input type="text" name="managerfurtherskills" id="managerfurtherskills" cf-questions="Would you see value in gaining further skills in remote management?" cf-conditional-managermgttrainingvalue="yes" cf-conditional-role="employer/manager">
+        
+        <input type="text" name="managerfurtherskillsexp" id="managerfurtherskillsexp" cf-questions="Could you please explain why?" cf-conditional-managerfurtherskills="no" cf-conditional-role="employer/manager">
         
         <input type="text" name="emptaskcomm" id="emptaskcomm" cf-input-placeholder="Eg. email, meetings, Slack, etc." cf-questions="How are tasks/goals assigned to you?" cf-conditional-role="employee">
         
@@ -140,7 +134,7 @@
         
         <input type="text" name="empupskill" id="empupskill" cf-questions="Do you believe gaining more skills in remote working would improve your productivity?" cf-conditional-empsocchangeimp="" cf-conditional-role="employee">
         
-        <fieldset cf-questions="Do you watch any videos or any online content to help you upskill?&amp;&amp;If so, how did it help?">
+        <fieldset cf-questions="Do you watch any videos or any online content to help you upskill?">
             <input required type="radio" name="empvid" id="empvidtrue" value="yes" cf-conditional-empupskill="" cf-conditional-role="employee">
             <label for="empvidtrue">Yes</label>
 
@@ -150,21 +144,15 @@
         
         <input type="text" name="empupskillresult" id="empupskillresult" cf-questions="Did it help?" cf-conditional-empvid="yes" cf-conditional-role="employee">
         
-        <fieldset cf-questions="Do you believe an online educational course would help you to work effectively (whilst remote)?">
-            <input required type="radio" name="empcourse" id="empcoursetrue" value="yes" cf-conditional-empupskillresult="" cf-conditional-role="employee">
-            <label for="empcoursetrue">Yes</label>
-
-            <input required type="radio" name="empcourse" id="empcoursefalse" value="no" cf-conditional-empupskillresult="" cf-conditional-role="employee">
-            <label for="empcoursefalse">No</label>
-        </fieldset>
+        <input type="text" name="empcourse" id="empcourse" cf-questions="Do you believe an online educational course would help you to work effectively (whilst remote)?" cf-conditional-empupskillresult="" cf-conditional-role="employee">
         
-        <input type="text" name="empnocourseexp" id="empnocourseexp" cf-questions="Could you please explain why?" cf-conditional-empcourse="no" cf-conditional-role="employee">
+        <input type="text" name="empcourseexp" id="empcourseexp" cf-questions="Could you please explain why?" cf-conditional-empcourse="" cf-conditional-role="employee">
         
         <fieldset cf-questions="1 Would you be interested in an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
-            <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-managerfurtherskillsnoexp="[\w\W]*" cf-conditional-empnocourseexp="[\w\W]*">
+            <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-managerfurtherskillsexp="[\w\W]*" cf-conditional-empcourseexp="[\w\W]*">
             <label for="courseinterest1true">Yes</label>
 
-            <input required type="radio" name="courseinterest1" id="courseinterest1false" value="no" cf-conditional-managerfurtherskillsnoexp="[\w\W]*" cf-conditional-empnocourseexp="[\w\W]*">
+            <input required type="radio" name="courseinterest1" id="courseinterest1false" value="no" cf-conditional-managerfurtherskillsexp="[\w\W]*" cf-conditional-empcourseexp="[\w\W]*">
             <label for="courseinterest1false">No</label>
         </fieldset>
         
