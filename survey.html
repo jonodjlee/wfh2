@@ -250,7 +250,7 @@
 
                     $(function() {
                         var jqxhr = $.post("https://api.formcake.com/api/form/c8a1d861-0bd1-445f-9d13-8d6eb07d7164/submission", $("#form").serialize(), function(data) {
-                            console.log("Success! Data: " + data.statusText);
+                            console.log("Success! Data: " + formDataSerialized);
                             $(location).attr('href', 'https://2020workingdynamics.netlify.app/success.html');
                         });
                     })
