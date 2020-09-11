@@ -149,10 +149,10 @@
         <input type="text" name="empcourseexp" id="empcourseexp" cf-questions="Could you please explain why?" cf-conditional-empcourse="" cf-conditional-role="employee">
         
         <fieldset cf-questions="1 Would you be interested in an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
-            <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-empcourseexp="[\w\W]*" cf-conditional-managerfurtherskillsexp="[\w\W]*">
+            <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-empcourseexp="[\w\W]*" cf-conditional-managerfurtherskillsexp="[\w\W]*" cf-conditional-role="employer/manager||employee">
             <label for="courseinterest1true">Yes</label>
 
-            <input required type="radio" name="courseinterest1" id="courseinterest1false" value="no" cf-conditional-empcourseexp="[\w\W]*" cf-conditional-managerfurtherskillsexp="[\w\W]*">
+            <input required type="radio" name="courseinterest1" id="courseinterest1false" value="no" cf-conditional-empcourseexp="[\w\W]*" cf-conditional-managerfurtherskillsexp="[\w\W]*" cf-conditional-role="employer/manager||employee">
             <label for="courseinterest1false">No</label>
         </fieldset>
         
