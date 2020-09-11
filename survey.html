@@ -124,48 +124,7 @@
             <label for="managerfurtherskillsfalse">No</label>
         </fieldset>
         
-        <fieldset cf-questions="1 Would you be interested in an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
-            <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-managerfurtherskills="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterest1true">Yes</label>
-
-            <input required type="radio" name="courseinterest1" id="courseinterest1false" value="no" cf-conditional-managerfurtherskills="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterest1false">No</label>
-        </fieldset>
-        
         <input type="text" name="managerfurtherskillsnoexp" id="managerfurtherskillsnoexp" cf-questions="Could you please explain why?" cf-conditional-managerfurtherskills="no" cf-conditional-role="employer/manager">
-        
-        <fieldset cf-questions="1 Which one of these do you find to be most challenging while remote working?">
-            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1social" value="social" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterestarea1social">Social Interaction</label>
-
-            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1timemgt" value="timemgt" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterestarea1timemgt">Time Management</label>
-            
-            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1workenv" value="workenv" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterestarea1workenv">Physical Work Environment</label>
-            
-            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1homedist" value="homedist" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterestarea1homedist">Home Distractions</label>
-            
-            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1motiv" value="motiv" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterestarea1motiv">Motivation</label>
-            
-            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1other" value="other" cf-conditional-courseinterest1="yes" cf-conditional-role="employer/manager">
-            <label for="courseinterestarea1other">Other</label>
-        </fieldset>
-        
-        <input type="text" name="courseotherexp1" id="courseotherexp1" cf-questions="1 Could you please specify?" cf-conditional-courseinterestarea1="other" cf-conditional-role="employer/manager">
-        
-        <fieldset cf-questions="1 How would valuate a course designed specifically to address the challenge you selected?">
-            <input required type="radio" name="coursevalue1" id="coursevalue1<55" value="<55" cf-conditional-courseinterestarea1="" cf-conditional-courseotherexp1="" cf-conditional-role="employer/manager">
-            <label for="coursevalue1<55">&lt;$55</label>
-
-            <input required type="radio" name="coursevalue1" id="coursevalue155" value="55" cf-conditional-courseinterestarea1="" cf-conditional-courseotherexp1="" cf-conditional-role="employer/manager">
-            <label for="coursevalue155">$55</label>
-            
-            <input required type="radio" name="coursevalue1" id="coursevalue1>55" value=">55" cf-conditional-courseinterestarea1="" cf-conditional-courseotherexp1="" cf-conditional-role="employer/manager">
-            <label for="coursevalue1>55">&gt;$55</label>
-        </fieldset>
         
         <input type="text" name="emptaskcomm" id="emptaskcomm" cf-input-placeholder="Eg. email, meetings, Slack, etc." cf-questions="How are tasks/goals assigned to you?" cf-conditional-role="employee">
         
@@ -189,19 +148,58 @@
             <label for="empvidfalse">No</label>
         </fieldset>
         
-        <input type="text" name="empupskillresult" id="empupskillresult" cf-questions="Did it help?" cf-conditional-empvid="yes">
+        <input type="text" name="empupskillresult" id="empupskillresult" cf-questions="Did it help?" cf-conditional-empvid="yes" cf-conditional-role="employee">
         
         <fieldset cf-questions="Do you believe an online educational course would help you to work effectively (whilst remote)?">
-            <input required type="radio" name="empcourse" id="empcoursetrue" value="yes" cf-conditional-empupskillresult="">
+            <input required type="radio" name="empcourse" id="empcoursetrue" value="yes" cf-conditional-empupskillresult="" cf-conditional-role="employee">
             <label for="empcoursetrue">Yes</label>
 
-            <input required type="radio" name="empcourse" id="empcoursefalse" value="no" cf-conditional-empupskillresult="">
+            <input required type="radio" name="empcourse" id="empcoursefalse" value="no" cf-conditional-empupskillresult="" cf-conditional-role="employee">
             <label for="empcoursefalse">No</label>
         </fieldset>
         
         <input type="text" name="empnocourseexp" id="empnocourseexp" cf-questions="Could you please explain why?" cf-conditional-empcourse="no" cf-conditional-role="employee">
         
+        <fieldset cf-questions="1 Would you be interested in an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
+            <input required type="radio" name="courseinterest1" id="courseinterest1" value="yes" cf-conditional-managerfurtherskills="yes">
+            <label for="courseinterest1true">Yes</label>
+
+            <input required type="radio" name="courseinterest1" id="courseinterest1false" value="no" cf-conditional-managerfurtherskills="yes">
+            <label for="courseinterest1false">No</label>
+        </fieldset>
         
+        <fieldset cf-questions="1 Which one of these do you find to be most challenging while remote working?">
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1social" value="social">
+            <label for="courseinterestarea1social">Social Interaction</label>
+
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1timemgt" value="timemgt">
+            <label for="courseinterestarea1timemgt">Time Management</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1workenv" value="workenv">
+            <label for="courseinterestarea1workenv">Physical Work Environment</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1homedist" value="homedist">
+            <label for="courseinterestarea1homedist">Home Distractions</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1motiv" value="motiv">
+            <label for="courseinterestarea1motiv">Motivation</label>
+            
+            <input required type="radio" name="courseinterestarea1" id="courseinterestarea1other" value="other">
+            <label for="courseinterestarea1other">Other</label>
+        </fieldset>
+        
+        <input type="text" name="courseotherexp1" id="courseotherexp1" cf-questions="1 Could you please specify?" cf-conditional-courseinterestarea1="other">
+        
+        <fieldset cf-questions="1 How would valuate a course designed specifically to address the challenge you selected?">
+            <input required type="radio" name="coursevalue1" id="coursevalue1<55" value="<55">
+            <label for="coursevalue1<55">&lt;$55</label>
+
+            <input required type="radio" name="coursevalue1" id="coursevalue155" value="55">
+            <label for="coursevalue155">$55</label>
+            
+            <input required type="radio" name="coursevalue1" id="coursevalue1>55" value=">55">
+            <label for="coursevalue1>55">&gt;$55</label>
+        </fieldset>
 
         <!--<input type="text" name="yeslike" id="yeslike" cf-questions="What do you like about working remotely?" cf-conditional-yesremotepastqualityexp="" cf-conditional-remote="1||2||3||4||5||6||7">
 
@@ -266,7 +264,7 @@
         <input required type="email" name="email" id="email" cf-input-placeholder="Enter your email here..." cf-error="Please enter a valid email." cf-questions="Great!&amp;&amp;What's your email?" cf-conditional-followup="yes" />-->
 
         <fieldset cf-questions="All done... Are you ready to submit?">
-            <input required type="radio" name="submit" id="submit" value="yes" cf-conditional-courseinterest1="no" cf-conditional-role="employer/manager||employee">
+            <input required type="radio" name="submit" id="submit" value="yes">
             <label for="submit">Yes</label>
         </fieldset>
 
