@@ -36,7 +36,7 @@
             <label for="age4">50+</label>
         </fieldset>
 
-        <input required type="text" name="industry" id="industry" cf-error="Please enter your industry/occupation." cf-questions="What's your industry or occupation?" cf-conditional-age="≤21||22-35||36-49||50+"/>
+        <input required type="text" name="industry" id="industry" cf-error="Please enter your industry/occupation." cf-questions="What's your industry or occupation?" cf-conditional-age="≤21||22-35||36-49||50+" />
 
         <fieldset cf-questions="How many days a week do you currently work remotely?">
             <input required type="radio" name="remote" id="remote0" value="0" cf-conditional-industry="[\w\W]*">
@@ -97,13 +97,13 @@
         <input type="text" name="managersocenvimp" id="managersocenvimp" cf-questions="What impact does the social change (or lack thereof) have on the outcome of your team(s)?" cf-conditional-role="employer/manager">
 
         <input type="text" name="managereffsugg" id="managereffsugg" cf-questions="Do you have any suggestions on how to increase the effectiveness of your team(s)?" cf-conditional-role="employer/manager">
-        
+
         <input type="text" name="managermgtskills" id="managermgtskills" cf-questions="How do you find your skills in (remote) management?" cf-conditional-role="employer/manager">
-        
+
         <input type="text" name="managermgtupskill" id="managermgtupskill" cf-questions="Do you believe upskilling in remote management would improve the outcomes of your team(s)?" cf-conditional-role="employer/manager">
-        
+
         <input type="text" name="managermgtupskillvid" id="managermgtupskillvid" cf-questions="Do you watch any videos or online courses to help you with upskilling?&amp;&amp;If yes, could you please list examples?" cf-conditional-role="employer/manager">
-        
+
         <input type="text" name="managermgtupskillcourse" id="managermgtupskillcourse" cf-questions="Have you ever learned anything from an online course?" cf-conditional-role="employer/manager">
 
         <fieldset cf-questions="Have you completed any training in remote management?">
@@ -115,25 +115,25 @@
         </fieldset>
 
         <input type="text" name="managermgttrainingvalue" id="managermgttrainingvalue" cf-questions="What value have you found in that?" cf-conditional-managermgttraining="yes">
-        
+
         <input type="text" name="managerfurtherskills" id="managerfurtherskills" cf-questions="Would you see value in gaining further skills in remote management?" cf-conditional-role="employer/manager">
-        
+
         <input type="text" name="managerfurtherskillsexp" id="managerfurtherskillsexp" cf-questions="Could you please explain why?" cf-conditional-role="employer/manager">
-        
+
         <input type="text" name="emptaskcomm" id="emptaskcomm" cf-input-placeholder="Eg. email, meetings, Slack, etc." cf-questions="How are tasks/goals assigned to you?" cf-conditional-role="employee">
-        
+
         <input type="text" name="emptaskcommeff" id="emptaskcommeff" cf-questions="Do you find this effective?" cf-conditional-role="employee">
-        
+
         <input type="text" name="emptimemgt" id="emptimemgt" cf-input-placeholder="Eg. always running overtime..." cf-questions="How are you currently handling time management (especially if you are remote)?" cf-conditional-role="employee">
-        
+
         <input type="text" name="empsocchange" id="empsocchange" cf-questions="How do you feel about the changes in social interaction with (remote) working?" cf-conditional-role="employee">
-        
+
         <input type="text" name="empsocchangeimp" id="empsocchangeimp" cf-questions="What impact does this social change have on your work?" cf-conditional-role="employee">
-        
+
         <input type="text" name="empincsoceng" id="empincsoceng" cf-questions="Do you have any suggestions as to how to increase social engagement?" cf-conditional-role="employee">
-        
+
         <input type="text" name="empupskill" id="empupskill" cf-questions="Do you believe gaining more skills in remote working would improve your productivity?" cf-conditional-role="employee">
-        
+
         <fieldset cf-questions="Do you watch any videos or any online content to help you upskill?">
             <input required type="radio" name="empvid" id="empvidtrue" value="yes" cf-conditional-role="employee">
             <label for="empvidtrue">Yes</label>
@@ -141,13 +141,13 @@
             <input required type="radio" name="empvid" id="empvidfalse" value="no" cf-conditional-role="employee">
             <label for="empvidfalse">No</label>
         </fieldset>
-        
+
         <input type="text" name="empupskillresult" id="empupskillresult" cf-questions="Did it help?" cf-conditional-empvid="yes">
-        
+
         <input type="text" name="empcourse" id="empcourse" cf-questions="Do you believe an online educational course would help you to work effectively (whilst remote)?" cf-conditional-role="employee">
-        
+
         <input type="text" name="empcourseexp" id="empcourseexp" cf-questions="Could you please explain why?" cf-conditional-role="employee">
-        
+
         <fieldset cf-questions="Would you be interested in an online course designed to help you upskill in remote work?&amp;&amp;(Includes: 2 hours of material delivered by professionals in the field & certificate on completion)">
             <input required type="radio" name="courseinterest" id="courseinterest" value="yes" cf-conditional-empcourseexp="[\w\W]*" cf-conditional-managerfurtherskillsexp="[\w\W]*" cf-conditional-role="employer/manager||employee">
             <label for="courseinteresttrue">Yes</label>
@@ -155,40 +155,40 @@
             <input required type="radio" name="courseinterest" id="courseinterestfalse" value="no" cf-conditional-empcourseexp="[\w\W]*" cf-conditional-managerfurtherskillsexp="[\w\W]*" cf-conditional-role="employer/manager||employee">
             <label for="courseinterestfalse">No</label>
         </fieldset>
-        
+
         <fieldset cf-questions="Which one of these do you find to be most challenging while remote working?">
             <input required type="radio" name="courseinterestarea" id="courseinterestareasocial" value="social">
             <label for="courseinterestareasocial">Social Interaction</label>
 
             <input required type="radio" name="courseinterestarea" id="courseinterestareatimemgt" value="timemgt">
             <label for="courseinterestareatimemgt">Time Management</label>
-            
+
             <input required type="radio" name="courseinterestarea" id="courseinterestareaworkenv" value="workenv">
             <label for="courseinterestareaworkenv">Physical Work Environment</label>
-            
+
             <input required type="radio" name="courseinterestarea" id="courseinterestareahomedist" value="homedist">
             <label for="courseinterestareahomedist">Home Distractions</label>
-            
+
             <input required type="radio" name="courseinterestarea" id="courseinterestareamotiv" value="motiv">
             <label for="courseinterestareamotiv">Motivation</label>
-            
+
             <input required type="radio" name="courseinterestarea" id="courseinterestareaother" value="other">
             <label for="courseinterestareaother">Other</label>
         </fieldset>
-        
+
         <input type="text" name="courseotherexp" id="courseotherexp" cf-questions="Could you please specify?" cf-conditional-courseinterestarea="other">
-        
+
         <fieldset cf-questions="How would valuate a course designed specifically to address the challenge you selected?">
             <input required type="radio" name="coursevalue" id="coursevalue<55" value="<55">
             <label for="coursevalue<55">&lt;$55</label>
 
             <input required type="radio" name="coursevalue" id="coursevalue55" value="55">
             <label for="coursevalue55">$55</label>
-            
+
             <input required type="radio" name="coursevalue" id="coursevalue>55" value=">55">
             <label for="coursevalue>55">&gt;$55</label>
         </fieldset>
-        
+
         <input type="text" name="courseothervalexp" id="courseothervalexp" cf-questions="How much would you be willing to pay instead?" cf-conditional-coursevalue="<55||>55">
 
         <fieldset cf-questions="Would you be willing to participate in potential future research surveys?">
@@ -261,5 +261,5 @@
 
     </script>
 </body>
-    
+
 </html>
